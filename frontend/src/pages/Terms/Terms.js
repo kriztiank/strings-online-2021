@@ -4,9 +4,10 @@ import './Terms.scss';
 
 function Terms() {
   return (
-    <section className='section single-product'>
+    <section className='Terms section single-product'>
       {/* griditem 1 */}
       <Sidebar />
+      {/* griditem 2 */}
       <article>
         <h2>Betaling</h2>
         <p>

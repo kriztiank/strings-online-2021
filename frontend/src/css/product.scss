@@ -1,76 +1,89 @@
 /******************
+Featured Products
+******************/
+.section-title {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+/******************
 All Products
 ******************/
 .Products {
-.section-center-cards {
-  color: white;
-  margin: 0 auto;
-  max-width: 1140px;
-  width: 90vw;
-  display: grid;
-  gap: 2rem 2rem;
-  justify-items: center;
-}
-// .card-item {
-//   display: grid;
-//   gap: 1rem 2rem;
-//   max-width: 35rem;
-// }
-.photo {
-  object-fit: cover;
-  display: block;
-  background: white;
-  padding: 2rem;
-  margin-bottom: 0.8rem;
-}
-.item-info header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 0.5px dotted grey;
-}
-.item-info h4 {
-  margin-bottom: 0.8rem;
-}
-.price {
-  color: #00f9b6;
-}
-.item-text {
-  margin-bottom: 0;
-  padding-top: 0.3rem;
-}
-@media screen and (min-width: 768px) {
-  .card-item {
-    grid-template-columns: 1fr 1fr;
-    gap: 0 1.25rem;
-    max-width: 40rem;
-  }
-}
-@media screen and (min-width: 1200px) {
   .section-center-cards {
-    width: 95vw;
-    grid-template-columns: 1fr 1fr;
+    color: white;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1140px;
+    display: grid;
+    gap: 2rem 2rem;
+    justify-items: center;
   }
-}
+  // .card-item {
+  //   display: grid;
+  //   gap: 1rem 2rem;
+  //   max-width: 35rem;
+  // }
+  .photo {
+    object-fit: cover;
+    display: block;
+    background: white;
+    padding: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .item-info header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted grey;
+  }
+  .item-info h4 {
+    margin-bottom: 0.8rem;
+  }
+  .price {
+    color: #00f9b6;
+  }
+  .item-text {
+    margin-bottom: 0;
+    padding-top: 0.3rem;
+  }
+  @media screen and (min-width: 768px) {
+    .card-item {
+      grid-template-columns: 1fr 1fr;
+      gap: 0 1.25rem;
+      max-width: 40rem;
+    }
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .section-center-cards {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    // Featured Products
+    .section-title {
+      text-align: left;
+    }
+  }
 }
 /**************
 Single Product
 **************/
 .single-product {
   color: white;
-  max-width: 1366px;
 }
 .single-product article {
   color: white;
   margin-bottom: 3rem;
 }
 .single-product-image {
-  // transform: rotate(20deg);
   background: white;
-  max-width: 20rem;
-  // align-self: center;
+  // max-width: 20rem;
   margin: 0 auto;
   margin-bottom: 0.5rem;
   padding: 2rem;
+  max-width: 100%;
 }
 .single-product h2 {
   font-size: 1.25rem;
@@ -89,28 +102,37 @@ Single Product
   line-height: 1.5;
   letter-spacing: 1px;
 }
+
+@media screen and (min-width: 800px) {
+  .single-product-image {
+    max-width: 40rem;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   .single-product {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     column-gap: 3rem;
   }
+  .single-product-image {
+    max-width: 20rem;
+  }
 }
 /******************
 Pagination Buttons
 ******************/
 .pagination-buttons {
-  width: 85vw;
-  max-width: 1170px;
-  margin: 0 auto;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-.pagination-buttons {
+  // margin: 0 auto;
+  // width: 90vw;
+  // max-width: 1140px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  // margin-left: 10rem;
 }
 .page-btn,
 .prev-page-btn,
@@ -152,7 +174,6 @@ Filters Section
 .filters-section {
   color: white;
   width: 85vw;
-
   max-width: 1024px;
   margin-bottom: -4rem;
 }
@@ -217,4 +238,13 @@ select option {
   // margin-bottom: 3.5rem;
   font-size: 1.1rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .filters-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -2rem;
+    max-width: 200px;
+  }
 }

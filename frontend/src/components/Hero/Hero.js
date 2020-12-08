@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import HeroHeader from '../../assets/hero.jpg';
+import { Link } from 'react-router-dom';
 import './hero.scss';
 
 function Hero() {
@@ -14,19 +15,21 @@ function Hero() {
             <img src={HeroHeader} alt='heroheader' className='heroImg' />
             <div className='heroGridItemRight'>
               <div>
-                <h2 className='fontWeightLight fontSize3'>
+                <h2 className='fontWeightLight'>
                   Martin <span className='fontWeightBold'>GPC-11E</span>
                 </h2>
-                <h3 className='fontWeightExtraLight fontSize2 colorgrey'>
+                <h4 className='fontWeightExtraLight colorgrey'>
                   SERIES ELECTRO ACOUSTIC
-                </h3>
+                </h4>
               </div>
               <div className='marginTopAndBottom'>
-                <h3 className='fontSize3 greyBorders'>
+                <h3 className='paddingTopAndBottom greyBorders'>
                   SE DEN NYE GENERATION HALVACOUSTISKE
                 </h3>
               </div>
-              <p>LÆS MERE</p>
+              <Link to='/westernguitar'>
+                <button className='btn btn-primary'>LÆS MERE</button>
+              </Link>
             </div>
           </div>
         </div>

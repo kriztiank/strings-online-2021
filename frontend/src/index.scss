@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
-// Global styles+
+// Global styles
 @import 'css/global.scss';
 // Global classes
 .spacer {
@@ -14,11 +14,12 @@
   margin-right: auto;
   margin-bottom: 2.5rem;
 }
-// Global section wrapper
+// Global section wrappers
 .section {
   width: 90vw;
   margin: 0 auto;
   max-width: 1366px;
+  // padding: 0 1rem;
   // padding: 1rem 0;
 }
 .section-small {
@@ -27,6 +28,18 @@
   max-width: 1024px;
   // padding: 1rem 0;
 }
+.section-smaller {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 700px;
+  // padding: 1rem 0;
+}
+// .section-tiny {
+//   width: 90vw;
+//   margin: 0 auto;
+//   max-width: 500px;
+//   padding: 0 1rem;
+// }
 .section-title {
   text-align: left;
   // margin-bottom: 2rem;
