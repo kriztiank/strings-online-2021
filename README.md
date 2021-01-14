@@ -1,5 +1,7 @@
 # Webdev project with React and Strapi
 
+https://strings-online.netlify.app
+
 ### Getting started
 
 **Clone the repository and install dependencies**
