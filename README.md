@@ -1,6 +1,6 @@
 # Webdev school project with React and Strapi
 
-https://strings-online.netlify.app 
+https://strings-online.netlify.app
 
 ### Getting started
 
