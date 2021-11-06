@@ -7,7 +7,7 @@ https://strings-online.netlify.app
 **Clone the repository and install dependencies**
 
 ```bash
-git clone https://github.com/kriztiank/strings-online.git
+git clone https://github.com/kriztiank/strings-online-2021.git
 ```
 
 ### Start the backend server
@@ -29,5 +29,7 @@ npm run start
 ```
 
 React server is running here => [http://localhost:3000](http://localhost:3000)
+
 Strapi server is running here => [http://localhost:1337](http://localhost:1337)
+
 Strapi admin is running here => [http://localhost:1337/admin](http://localhost:1337/admin)

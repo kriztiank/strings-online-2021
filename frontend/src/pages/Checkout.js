@@ -113,7 +113,7 @@ function Checkout(props) {
   );
 }
 
-// pass in checkout to injectStripe HOC
+// pass in checkout to injectStripe HOC/higher order component
 const CardForm = injectStripe(Checkout);
 
 const StripeWrapper = () => {
