@@ -63,7 +63,7 @@ export default function ProductProvider({ children }) {
       newProducts = newProducts.filter(item => {
         let title = item.title.toLowerCase().trim();
         // if title match the search input
-        return title.startsWith(search) ? item : null;
+        return title.startsWith(search.toLowerCase()) ? item : null;
       });
     }
     // FILTER BY PRICE
